@@ -1,3 +1,4 @@
+/* when screen width is 1400 pixels or less */
 @media screen and (max-width: 1400px) {
   #profile {
     height: 83vh;
@@ -12,6 +13,7 @@
   }
 }
 
+/* when screen width is 1200 px or less */
 @media screen and (max-width: 1200px) {
   #desktop-nav {
     display: none;
@@ -47,6 +49,7 @@
   }
 }
 
+/* when screen width is 600 px or less */
 @media screen and (max-width: 600px) {
   #contact,
   footer {

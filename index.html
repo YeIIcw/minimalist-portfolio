@@ -2,19 +2,22 @@
 <html lang="en">
   <!-- metadata: data about the html document. IS NOT DISPLAYED-->
   <head>
+    <!-- meta tags providing information about the document -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+    <!-- links to css files -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <link rel="icon" href= "./assets/icon.png" type="image/x-icon">   
+    <link rel="icon" href= "./assets/icon.png" type="image/x-icon"> 
     </head>
 
   <!-- main body of the webpage -->
   <body>
     <!-- navigation bar for desktop webpage -->
     <nav id="desktop-nav">
+      <!-- logo and nav links -->
       <div class="logo">Adam Wang</div>
       <div>
         <ul class="nav-links">
@@ -28,13 +31,16 @@
 
     <!-- navigation bar for mobile webpage -->
     <nav id="hamburger-nav">
+      <!-- logo and nav links -->
       <div class="logo">Adam Wang</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
+          <!-- create three horizontal lines to look like a hamburger -->
           <span></span>
           <span></span>
           <span></span>
         </div>
+        <!-- links to different section of the page -->
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
@@ -46,10 +52,12 @@
 
     <!-- hero section -->
     <section id="profile">
+      <!-- Pfp and introductory information -->
       <div class="section__pic-container">
         <img src="./assets/pfp.png" alt="Adam Wang profile picture" />
       </div>
       <div class="section__text">
+        <!-- Title, description, and buttons for downloading CV and contact -->
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Adam Wang</h1>
         <p class="section__text__p2">Highschool Student</p>
@@ -64,6 +72,7 @@
             Contact Info
           </button>
         </div>
+        <!-- Social media icons with links to LinkedIn and GitHub profiles -->
         <div id="socials-container">
           <img
             src="./assets/linkedin.png"
@@ -83,9 +92,11 @@
 
     <!-- about me section -->
     <section id="about">
+      <!-- Title and introductory text about you -->
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
+        <!-- Profile picture for the About Me section -->
         <div class="section__pic-container">
           <img
             src="./assets/side-pfp.jpg"
@@ -94,6 +105,7 @@
           />
         </div>
         <div class="about-details-container">
+          <!-- Details about experience and education -->
           <div class="about-containers">
             <div class="details-container">
               <img
@@ -114,6 +126,7 @@
               <p>Markville Secondary School</p>
             </div>
           </div>
+          <!-- Personal introduction and description -->
           <div class="text-container">
             <p>
               Hello there! I'm [Your Name], a high school student with a passion for learning, creativity, and making the most out of life. 
@@ -122,6 +135,7 @@
           </div>
         </div>
       </div>
+      <!-- Arrow icon to scroll to the Experience section -->
       <img
         src="./assets/arrow.png"
         alt="Arrow icon"
@@ -132,10 +146,12 @@
 
     <!-- experience section -->
     <section id="experience">
+      <!-- Title and details about experience, could be anything you want -->
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
       <div class="experience-details-container">
         <div class="about-containers">
+          <!-- left side -->
           <div class="details-container">
             <h2 class="experience-sub-title">Frontend Development</h2>
             <div class="article-container">
@@ -207,6 +223,7 @@
               </article>
             </div>
           </div>
+          <!-- right side -->
           <div class="details-container">
             <h2 class="experience-sub-title">Frontend Development</h2>
             <div class="article-container">
@@ -258,6 +275,7 @@
           </div>
         </div>
       </div>
+      <!-- Arrow icon to scroll to the Projects section -->
       <img
         src="./assets/arrow.png"
         alt="Arrow icon"
@@ -271,6 +289,7 @@
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
+        <!-- list of projects -->
         <div class="about-containers">
           <div class="details-container color-container">
             <div class="article-container">
@@ -370,6 +389,7 @@
           </div>
         </div>
       </div>
+      <!-- Arrow icon to scroll to the Contact section -->
       <img
         src="./assets/arrow.png"
         alt="Arrow icon"
@@ -380,6 +400,7 @@
 
     <!-- contact section -->
     <section id="contact">
+      <!-- Title and description of the Contact section -->
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
@@ -404,6 +425,7 @@
 
     <!-- footer -->
     <footer>
+      <!-- Navigation links in the footer for easy access to different sections of the webpage -->
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
