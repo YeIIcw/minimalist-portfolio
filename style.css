@@ -1,7 +1,14 @@
+/* This is the CSS file which turns your plain HTML into a styled, more modern and minimalistic look.
+Throughout this file, you will see a variety of CSS selectors, classes, pseudo-classes, and many properties.
+One thing you may notice is that display: flex, is used a lot. Flexbox is very useful and common in the modern
+day, so this is one of the most important things to learn out of everything in CSS: https://www.w3schools.com/css/css3_flexbox.asp */
+
 /* GENERAL */
 
+/* Using google fonts link to use Poppins fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+/* Zero margin and padding for all elements */
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +18,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+/* Makes each button navigate smoothly to the next section of the website */
 html {
   scroll-behavior: smooth;
 }
@@ -51,6 +59,7 @@ a {
   text-decoration-color: white;
 }
 
+/* Example of a CSS pseudo class (:hover) which changes the <a> tag on hover */
 a:hover {
   color: grey;
   text-decoration: underline;
@@ -62,6 +71,7 @@ a:hover {
   font-size: 2rem;
 }
 
+/* Pseudo class (:hover) which changes the logo class on hover */
 .logo:hover {
   cursor: default;
 }
@@ -86,6 +96,7 @@ a:hover {
   cursor: pointer;
 }
 
+/* Selecting the class "hamburger-icon" and then only the span tags */
 .hamburger-icon span {
   width: 100%;
   height: 2px;
@@ -104,6 +115,7 @@ a:hover {
   transition: all 0.3 ease-in-out;
 }
 
+/* Selecting a tags with classname "menu-links" */
 .menu-links a {
   display: block;
   padding: 10px;
@@ -122,6 +134,7 @@ a:hover {
   max-height: 300px;
 }
 
+/* More examples of pseudo classes. The first-child pseudo class selects the first element, nth-child selects the nth element, and last-child selects the last element */
 .hamburger-icon.open span:first-child {
   transform: rotate(45deg) translate(10px, 5px);
 }

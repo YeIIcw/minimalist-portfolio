@@ -1,6 +1,9 @@
+<!-- This is the HTML file which has the basic overall layout of your modern and minimalistic portfolio.
+Throughout this file, there will find a variety of tags, attributes, and classes to make the website functional. -->
+
 <!DOCTYPE html>
 <html lang="en">
-  <!-- metadata: data about the html document. IS NOT DISPLAYED-->
+  <!-- metadata: data about the html document. THIS IS NOT DISPLAYED-->
   <head>
     <!-- meta tags providing information about the document -->
     <meta charset="UTF-8" />
@@ -11,7 +14,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
     <link rel="icon" href= "./assets/icon.png" type="image/x-icon"> 
-    </head>
+  </head>
 
   <!-- main body of the webpage -->
   <body>
@@ -34,7 +37,7 @@
       <!-- logo and nav links -->
       <div class="logo">Adam Wang</div>
       <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
+        <div class="hamburger-icon" onclick="toggleMenu()"> 
           <!-- create three horizontal lines to look like a hamburger -->
           <span></span>
           <span></span>
@@ -62,12 +65,14 @@
         <h1 class="title">Adam Wang</h1>
         <p class="section__text__p2">Highschool Student</p>
         <div class="btn-container">
+          <!-- Button with an "onclick" attribute which opens the resume.pdf in assets -->
           <button
             class="btn btn-color-2"
             onclick="window.open('./assets/resume.pdf')"
           >
             Download CV
           </button>
+          <!-- Button with an "onclick" attribute which moves the screen down to "Contact Me" section -->
           <button class="btn btn-color-1" onclick="location.href='#contact'">
             Contact Info
           </button>
@@ -151,10 +156,13 @@
       <h1 class="title">Experience</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <!-- left side -->
+          <!-- Experience section which contains two sections: left section and right section -->
+          <!-- Left section containing frontend development programming languages -->
           <div class="details-container">
+            <!-- Subheading -->
             <h2 class="experience-sub-title">Frontend Development</h2>
             <div class="article-container">
+              <!-- Each article container holds a checkmark image, title, and skill level -->
               <article>
                 <img
                   src="./assets/checkmark.png"
@@ -223,10 +231,12 @@
               </article>
             </div>
           </div>
-          <!-- right side -->
+          <!-- Right section containing even more frontend development programming languages -->
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <!-- Subheading -->
+            <h2 class="experience-sub-title">Frontend Development</h2> 
             <div class="article-container">
+              <!-- Each article container holds a checkmark image, title, and skill level -->
               <article>
                 <img
                   src="./assets/checkmark.png"
@@ -291,7 +301,9 @@
       <div class="experience-details-container">
         <!-- list of projects -->
         <div class="about-containers">
+          <!-- Div section with class name "details-container" and "color-container" which holds individual sections with an image, title, and two buttons -->
           <div class="details-container color-container">
+            <!-- Image container -->
             <div class="article-container">
               <img
                 src="./assets/JavaGame.jpg"
@@ -299,7 +311,9 @@
                 class="project-img"
               />
             </div>
+            <!-- Title of section -->
             <h2 class="experience-sub-title project-title">Reclaim The Throne: The Prince Journey</h2>
+            <!-- Two buttons, each which have an "onclick" property to redirect the user -->
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -403,7 +417,9 @@
       <!-- Title and description of the Contact section -->
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
+      <!-- Section that holds each contact information -->
       <div class="contact-info-upper-container">
+        <!-- Container that includes an image, and link for user to contact at -->
         <div class="contact-info-container">
           <img
             src="./assets/email.png"
