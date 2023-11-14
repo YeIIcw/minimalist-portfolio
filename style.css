@@ -14,6 +14,7 @@ day, so this is one of the most important things to learn out of everything in C
   padding: 0;
 }
 
+/* Set the font to poppins for the entire body*/
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -23,12 +24,14 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Setting default text color for paragraphs */
 p {
   color: rgb(85, 85, 85);
 }
 
 /* TRANSITION */
 
+/* Applying transition for anchor tags and buttons */
 a,
 .btn {
   transition: all 300ms ease;
@@ -36,6 +39,7 @@ a,
 
 /* DESKTOP NAV */
 
+/* Styling for the desktop navigation bar */
 nav,
 .nav-links {
   display: flex;
@@ -78,10 +82,12 @@ a:hover {
 
 /* HAMBURGER MENU */
 
+/* Styling for the hamburger menu */
 #hamburger-nav {
   display: none;
 }
 
+/* Styling for the menu links in the hamburger menu */
 .hamburger-menu {
   position: relative;
   display: inline-block;
@@ -135,6 +141,7 @@ a:hover {
 }
 
 /* More examples of pseudo classes. The first-child pseudo class selects the first element, nth-child selects the nth element, and last-child selects the last element */
+/* Animations for opening and closing the hamburger menu */
 .hamburger-icon.open span:first-child {
   transform: rotate(45deg) translate(10px, 5px);
 }
@@ -161,6 +168,7 @@ a:hover {
 
 /* SECTIONS */
 
+/* Styling for all sections in the webpage */
 section {
   padding-top: 4vh;
   height: 96vh;
@@ -175,6 +183,7 @@ section {
 
 /* PROFILE SECTION */
 
+/* Styling for the profile section */
 #profile {
   display: flex;
   justify-content: center;
@@ -221,6 +230,7 @@ section {
 
 /* ICONS */
 
+/* Styling for icons used in the webpage */
 .icon {
   cursor: pointer;
   height: 2rem;
@@ -228,6 +238,7 @@ section {
 
 /* BUTTONS */
 
+/* Styling for buttons in the webpage */
 .btn-container {
   display: flex;
   justify-content: center;
@@ -276,6 +287,7 @@ section {
 
 /* ABOUT SECTION */
 
+/* Styling for the about section */
 #about {
   position: relative;
 }
@@ -330,6 +342,7 @@ section {
 
 /* EXPERIENCE SECTION */
 
+/* Styling for the experience section */
 #experience {
   position: relative;
 }
