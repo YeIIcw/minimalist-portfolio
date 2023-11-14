@@ -1,3 +1,10 @@
+/* Media queries are a tool in CSS that enable you to adjust the styling of a website based on different conditions, such as screen size or device characteristics. 
+They allow you to create responsive designs by applying specific styles when certain conditions are met, ensuring that your website looks and works well 
+across various devices and screen resolutions. Essentially, media queries help tailor the appearance of your site to different contexts, enhancing the 
+overall user experience. */
+
+
+
 /* when screen width is 1400 pixels or less */
 @media screen and (max-width: 1400px) {
   #profile {
@@ -13,11 +20,14 @@
   }
 }
 
-/* when screen width is 1200 px or less */
+/* when screen width is 1200 px or less 
+Designs for Tablets*/
 @media screen and (max-width: 1200px) {
+  /* Removing the desktop nav */
   #desktop-nav {
     display: none;
   }
+  /* Having the Hamburger nav to display flex. */
   #hamburger-nav {
     display: flex;
   }
@@ -25,10 +35,12 @@
   .experience-details-container {
     margin-top: 2rem;
   }
+  /* Having the Profile take up the row */
   #profile,
   .section-container {
     display: block;
   }
+  /* Removing the arrow  */
   .arrow {
     display: none;
   }
@@ -49,7 +61,8 @@
   }
 }
 
-/* when screen width is 600 px or less */
+/* when screen width is 600 px or less
+Changing desgins for smaller screens (Phones)*/
 @media screen and (max-width: 600px) {
   #contact,
   footer {
@@ -66,14 +79,17 @@
     height: fit-content;
     margin-bottom: 2rem;
   }
+  /* Having the about,contact-info containers, and button containers all warp vertically instead of being side by side */
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
   }
+  /* Remove margins between containers  */
   .contact-info-container {
     margin: 0;
   }
+  /* Shrink the font sizes  */
   .contact-info-container p,
   .nav-links li a {
     font-size: 1rem;
@@ -84,11 +100,14 @@
   .logo {
     font-size: 1.5rem;
   }
+    /*Setting a new  direction for the nav links to a  column (Vertically) 
+    Center the text */
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
   }
+  /* Centering the items within the section-pic container  */
   .section__pic-container {
     width: auto;
     height: 46vw;
@@ -100,6 +119,7 @@
   .title {
     font-size: 2rem;
   }
+  /* Center the text */
   .text-container {
     text-align: justify;
   }

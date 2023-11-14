@@ -83,6 +83,7 @@ a:hover {
 /* HAMBURGER MENU */
 
 /* Styling for the hamburger menu */
+/* Using the Id selector instead of class */
 #hamburger-nav {
   display: none;
 }
