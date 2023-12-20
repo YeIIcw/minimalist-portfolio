@@ -172,10 +172,9 @@ a:hover {
 /* Styling for all sections in the webpage */
 section {
   padding-top: 4vh;
-  height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
-  min-height: fit-content;
+  min-height: 96vh;
 }
 
 .section-container {
@@ -313,6 +312,7 @@ section {
   gap: 2rem; /* Set the gap between child elements in the about section container */
   margin-bottom: 2rem; /* Set margin at the bottom of the about section container */
   margin-top: 2rem; /* Set margin at the top of the about section container */
+  
 }
 
 /* Container for details in the about section */
@@ -343,7 +343,7 @@ section {
 /* Container for details in the about section */
 .details-container {
   padding: 1.5rem; /* Set padding for the details container */
-  flex: 1; /* Allow the container to grow and shrink based on available space */
+  flex: 1 0 calc(33.333% - 4rem); /* Allow the container to grow and shrink based on available space */
   background: white; 
   border-radius: 2rem; /* Set border radius for rounded corners */
   border: rgb(53, 53, 53) 0.1rem solid; /* Set border for the details container */
